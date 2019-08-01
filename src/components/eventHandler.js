@@ -1,25 +1,18 @@
-import React from 'react';
-import EventsTable from './eventsTable'
-import 'react-datepicker/dist/react-datepicker.css';
+import React from "react";
+import EventsTable from "./eventsTable";
+import "react-datepicker/dist/react-datepicker.css";
 import "semantic-ui-css/semantic.min.css";
-import EventForm from '../components/eventForm'
+import EventForm from "../components/eventForm";
 
-const EventHandler = ()=> {
+const EventHandler = () => {
+  return (
+    <>
+      <div className="ui center aligned container">
+        <EventForm />
+      </div>
 
-return(
-<>
-
-<div className="ui center aligned container">
-
-   <EventForm/>
-  </div>
- 
-
-<EventsTable />
- 
-</>
-)
-
-
-}
+      <EventsTable />
+    </>
+  );
+};
 export default EventHandler;
